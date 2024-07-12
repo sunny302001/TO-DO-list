@@ -29,9 +29,20 @@
                                 <li><a class="dropdown-item" href="#" id="weekend">Weekend</a></li>
                             </ul>
                         </div>
-                        
+                        <div class="dropdown ml-2">
+                            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="priorityDropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-flag"></i> <span id="selected-priority-label">Priority</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="priorityDropdownMenuButton">
+                                <li><a class="dropdown-item" href="#" id="high-priority" style="color: red;">High</a></li>
+                                <li><a class="dropdown-item" href="#" id="medium-priority" style="color: blue;">Medium</a></li>
+                                <li><a class="dropdown-item" href="#" id="low-priority" style="color: green;">Low</a></li>
+                            </ul>
+                        </div>
+                        <input id="tag-input" type="text" class="form-control tags" placeholder="Tags">
                         <button id="add-task-button" type="button" class="btn btn-outline-danger">Add</button>
-                    </div>
+                    </div>   
+                    
                 </div>
             </nav>
         </div>
@@ -42,25 +53,24 @@
             <div class="side-bar-sections">
                 <h2>Days</h2>
                 <ul class="list-group">
-                    <li class="list-group-item" style="color: red;">Today</li>
-                    <li class="list-group-item" style="color: blue;">Tomorrow</li>
-                    <li class="list-group-item" style="color: green;">Weekend</li>
+                    <li class="list-group-item">Today <span id="today-count" class="badge bg-primary rounded-pill">0</span></li>
+                    <li class="list-group-item">Tomorrow <span id="tomorrow-count" class="badge bg-primary rounded-pill">0</span></li>
+                    <li class="list-group-item">Weekend <span id="weekend-count" class="badge bg-primary rounded-pill">0</span></li>
                 </ul>
             </div>
             <div class="side-bar-sections">
                 <h2>Priority</h2>
                 <ul class="list-group">
-                    <li class="list-group-item" style="color: red;">High</li>
-                    <li class="list-group-item" style="color: blue;">Medium</li>
-                    <li class="list-group-item" style="color: green;">Low</li>
+                    <li class="list-group-item" style="color: red;">High <span id="high-count" class="badge bg-danger rounded-pill">0</span></li>
+                    <li class="list-group-item" style="color: blue;">Medium <span id="medium-count" class="badge bg-info rounded-pill">0</span></li>
+                    <li class="list-group-item" style="color: green;">Low <span id="low-count" class="badge bg-success rounded-pill">0</span></li>
                 </ul>
             </div>
+            
             <div class="side-bar-sections">
                 <h2>Tags</h2>
-                <ul class="list-group">
-                    <li class="list-group-item" style="color: blue;">Office</li>
-                    <li class="list-group-item" style="color: blue;">Sports</li>
-                    <li class="list-group-item" style="color: blue;">Home</li>
+                <ul id="tags-list" class="list-group">
+                    <!-- Tags will be added here dynamically -->
                 </ul>
             </div>
         </div>

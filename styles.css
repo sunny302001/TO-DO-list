@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    height: 100vh;
 }
 
 .header {
@@ -29,6 +28,10 @@ body {
 }
 .list-group-item:hover {
     background-color: #f0f0f0;
+}
+
+.tags{
+    max-width:70px;
 }
 .edit-sidebar {
     position: fixed;
