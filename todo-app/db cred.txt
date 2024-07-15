@@ -1,0 +1,5 @@
+sathwikreddy
+PF0xsJgYZkm8vwS5
+
+
+mongodb+srv://sathwikreddy:PF0xsJgYZkm8vwS5@cluster0.pud5jgt.mongodb.net/
